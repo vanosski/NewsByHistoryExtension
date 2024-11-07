@@ -1,3 +1,4 @@
+
 ---
 
 # Browsing History to News - Chrome Extension
@@ -30,7 +31,6 @@
 ![news1](https://github.com/user-attachments/assets/ff8c85bd-2c4d-4500-a8bd-4fd8978063ae)
 ![news2](https://github.com/user-attachments/assets/8e0780fa-c8fb-4109-85d3-b91187e82d6e)
 
-
 ## Permissions
 
 This extension requires the following permissions:
@@ -50,10 +50,3 @@ If you encounter issues with the extension:
 - Ensure that you're using the latest version of Chrome.
 - Clear your browsing history and try again.
 - If the extension isn't generating news, try refreshing the page or reinstalling the extension.
-
-## Contact
-
-For questions or support, contact us at:  
-**Email**: support@newsbyhistory.com
-
----
