@@ -10,7 +10,7 @@ async function getBrowsingHistory() {
 
 // Function to call the backend API
 async function sendToBackend(prompt) {
-  const response = await fetch("http://localhost:5000/api/generate", {
+  const response = await fetch("https://newsbyhistory.onrender.com/api/generate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
