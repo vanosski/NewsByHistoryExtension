@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browsing History to Gemini</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', serif;
+        line-height: 1.6;
+        width: 500px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.sstatic.net/kb0Zm.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3.5em;
+        color: #2c2c2c;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        background-image: url('https://i.sstatic.net/kb0Zm.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      #fetchHistory {
+        display: block;
+        margin: 30px auto;
+        padding: 12px 25px;
+        font-size: 1.5em;
+        background-color: #2c2c2c;
+        color: white;
+        border: 1px solid #333;
+        border-radius: 4px;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      #fetchHistory:hover {
+        background-color: #444;
+      }
+      
+  /* Container styling to simulate newspaper columns */
+  #output {
+    column-count: 2; /* Number of columns */
+    column-gap: 30px; /* Gap between columns */
+    text-align: justify;
+    font-family: 'Georgia', serif; /* Classic newspaper font */
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f8f4e3; /* Light, vintage paper color */
+    background-image: url('https://i.sstatic.net/kb0Zm.jpg');
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Paragraph styling */
+  #output p {
+    margin: 0 0 10px; /* Spacing between paragraphs */
+    
+    padding: 0;
+  }
+
+  /* Optional: Add a subtle border or line to separate columns visually */
+  #output::after {
+    content: "";
+    display: block;
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+  }
+
+
+      footer {
+        text-align: center;
+        font-size: 1em;
+        color: #555;
+        margin-top: 40px;
+        padding: 15px;
+        background-color: #2c2c2c;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        background-image: url('https://i.sstatic.net/kb0Zm.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* Additional styling for a vintage feel */
+      .news-item h2, .news-item p {
+        font-family: 'Times New Roman', serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+      }
+
+      .news-item {
+        background-image: url('https://i.sstatic.net/kb0Zm.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Browsing History News</h1>
+    <button id="fetchHistory">Get News</button>
+    <div id="output"></div>
+
+ 
+    <script src="popup.js"></script>
+  </body>
+</html>

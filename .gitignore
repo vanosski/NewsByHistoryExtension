@@ -1,0 +1,14 @@
+
+# Logs
+*.log
+logs/
+
+# General dependency files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backend-specific exclusions
+backend/node_modules/
+backend/logs/
+backend/.env
